@@ -2,126 +2,113 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Research Station</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Ocean Research Station</h1>
-        <p>Explore the ocean and discover marine life</p>
-    </header>
+    <main class="main">
 
-    <hr>
-
-    <main>
-        
-        <section>
-            <h2>Discovered Species</h2>
-            <p><strong>Discovered species: 0</strong></p>
-
-            <ul>
-                <li>
-                    <h3>Clownfish</h3>
-                </li>
-                <li>
-                    <h3>Octopus</h3>
-                </li>
-                <li>
-                    <h3>Jellyfish</h3>
-                </li>
-                <li>
-                    <h3>Shark</h3>
-                </li>
-                <li>
-                    <h3>Sea Turtle</h3>
-                </li>
-                <li>
-                    <h3>Stingray</h3>
-                </li>
-            </ul>
+        <section class="hero">
+            <div class="decorations"></div>
+            <svg class="hero-svg" aria-hidden="true"></svg>
+            <div class="container">
+                <h1>Ocean Research Station</h1>
+                <p>Explore the ocean and discover marine life</p>
+            </div>
         </section>
 
-        <hr>
+        <section class="species-section">
+            <div class="container">
+                <h2>Discovered Species</h2>
 
-        <section>
+                <div class="counter-box">
+                    <span class="icon"></span>
+                    <p>Discovered species: <span id="counter">0</span></p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <div class="card active">
+                        <div class="overlay"></div>
+                        <img src="images/clownfish.png" alt="Clownfish">
+                        <h3>Clownfish</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/stingray.png" alt="Stingray">
+                        <h3>Stingray</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/turtle.png" alt="Sea Turtle">
+                        <h3>Sea Turtle</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/shark.png" alt="Shark">
+                        <h3>Shark</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/jellyfish.png" alt="Jellyfish">
+                        <h3>Jellyfish</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/octopus.png" alt="Octopus">
+                        <h3>Octopus</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="depths-section">
             <h2>Explore Ocean Depths</h2>
-            
-            <nav>
-                <button>Surface (0m)</button>
-                <button>Twilight Zone (~500m)</button>
-                <button>Abyss (~1000m)</button>
-                <button>Mariana Trench (~2000m)</button>
-            </nav>
 
-            <br><br>
+            <div class="tabs">
+                <button class="btn">Surface (0m)</button>
+                <button class="btn">Twilight Zone (-500m)</button>
+                <button class="btn">Abyss (-1000m)</button>
+                <button class="btn active">Mariana Trench (-2000m)</button>
+            </div>
 
-            <article>
-                <section>
-                    <div>
-                        <p><em>Temp: 24°C</em></p>
-                        <p><small>0m</small></p>
-                        <h3>The Sunlit Surface</h3>
-                        <p>The epipelagic zone receives ample sunlight, fueling photosynthesis and supporting the majority of ocean life, including playful dolphins and coastal crabs.</p>
-                        <p><a href="#">0m Depth Range</a></p>
+            <article class="content-area">
+                <div class="gradient"></div>
+                <div class="container">
+                    <div class="margin-block">
+                        <h2>The Sunlit Surface</h2>
                     </div>
-                </section>
-
-                <br>
-
-                <section>
-                    <div>
-                        <p><em>Temp: 8°C</em></p>
-                        <p><small>-500m</small></p>
-                        <h3>The Twilight Zone</h3>
-                        <p>Sunlight rapidly fades in the mesopipelagic zone. Bioluminescence begins to appear as glowing jellyfish and squid navigate the dim, cool waters.</p>
+                    <div class="margin-block">
+                        <p class="depth-text">0m Depth Range</p>
                     </div>
-                </section>
-
-                <br>
-
-                <section>
-                    <div>
-                        <p><em>Temp: 2°C</em></p>
-                        <p><small>-1000m</small></p>
-                        <h3>The Abyss</h3>
-                        <p>Complete darkness and immense pressure characterize the bathypelagic zone. Strange creatures like the Anglerfish use bioluminescent lures to survive.</p>
-                    </div>
-                </section>
-
-                <br>
-
-                <section>
-                    <div>
-                        <p><em>Temp: 1°C</em></p>
-                        <p><small>-2000m+</small></p>
-                        <h3>The Mariana Trench</h3>
-                        <p>The hadalpelagic zone, the deepest trenches on Earth. Pitch black and near-freezing, home to highly specialized life forms like pale snailfish.</p>
-                    </div>
-                </section>
+                </div>
+                <div class="shadow-layer"></div>
             </article>
-
         </section>
-
     </main>
 
-    <hr>
-
-    <footer>
-        <div>
-            <h3>Ocean Research Station</h3>
+    <footer class="footer">
+        <svg class="footer-svg" aria-hidden="true"></svg>
+        <div class="container">
+            <p>Ocean Research Station</p>
             <p>Educational project for kids</p>
-            <p><small>© 2024 Ocean Research Station • Built for The Buoyant Laboratory</small></p>
+            <div class="footer-margin">
+                <p>© 2024 Ocean Research Station • Built for The Buoyant Laboratory</p>
+            </div>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="#">Research Data</a></li>
-                <li><a href="#">Safety Protocol</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+        <nav class="nav">
+            <a href="#" class="link">Research Data</a>
+            <a href="#" class="link">Safety Protocol</a>
+            <a href="#" class="link">Privacy</a>
+            <a href="#" class="link">Contact</a>
         </nav>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
