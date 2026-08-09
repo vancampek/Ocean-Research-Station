@@ -1,113 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ocean Research Station</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="home">
+      <header class="hero">
+        <div class="b b1"></div>
+        <div class="b b2"></div>
+        <h1>Ocean Research Station</h1>
+        <p>Explore the ocean and discover marine life</p>
+        <div class="wave"></div>
+      </header>
 
-    <main class="main">
-
-        <section class="hero">
-            <div class="decorations"></div>
-            <div class="container">
-                <h1>Ocean Research Station</h1>
-                <p>Explore the ocean and discover marine life</p>
-            </div>
+      <main class="w">
+        <section class="sec">
+          <h2>Discovered Species</h2>
+          <p class="pill discovered-button" id="species-counter">0 discovered species</p>
+          <div class="sp">
+            <article class="it a animal-card species-card" id="animal-1"><img src="images/Clownfish.png" alt="Clownfish"><h3>Clownfish</h3></article>
+            <article class="it animal-card species-card" id="animal-2"><img src="images/Octopus.png" alt="Octopus"><h3>Octopus</h3></article>
+            <article class="it animal-card species-card" id="animal-3"><img src="images/Jellyfish.png" alt="Jellyfish"><h3>Jellyfish</h3></article>
+            <article class="it animal-card species-card" id="animal-4"><img src="images/Shark.png" alt="Shark"><h3>Shark</h3></article>
+            <article class="it animal-card species-card" id="animal-5"><img src="images/Seaturtle.png" alt="Sea Turtle"><h3>Sea Turtle</h3></article>
+            <article class="it animal-card species-card" id="animal-6"><img src="images/Stingray.png" alt="Stingray"><h3>Stingray</h3></article>
+          </div>
         </section>
 
-        <section class="species-section">
-            <div class="container">
-                <h2>Discovered Species</h2>
-
-                <div class="counter-box">
-                    <span class="icon"></span>
-                    <p>Discovered species: <span id="counter">0</span></p>
-                </div>
-
-                <div class="cards-grid">
-
-                    <div class="card active">
-                        <div class="overlay"></div>
-                        <img src="images/clownfish.png" alt="Clownfish">
-                        <h3>Clownfish</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/stingray.png" alt="Stingray">
-                        <h3>Stingray</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/turtle.png" alt="Sea Turtle">
-                        <h3>Sea Turtle</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/shark.png" alt="Shark">
-                        <h3>Shark</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/jellyfish.png" alt="Jellyfish">
-                        <h3>Jellyfish</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/octopus.png" alt="Octopus">
-                        <h3>Octopus</h3>
-                    </div>
-
-                </div>
+        <section class="sec">
+          <h2>Explore Ocean Depths</h2>
+          <div class="tabs">
+            <button class="tb on" id="tab-surface">Surface (0m)</button>
+            <button class="tb" id="tab-twilight">Twilight Zone (-500m)</button>
+            <button class="tb" id="tab-abyss">Abyss (-1000m)</button>
+            <button class="tb" id="tab-trench">Mariana Trench (-2000m)</button>
+          </div>
+          <article class="card">
+            <div>
+              <p class="tag" id="zt">Temp: 24C</p>
+              <h3 id="zh">The Sunlit Surface</h3>
+              <p class="txt" id="zx">The epipelagic zone receives ample sunlight, fueling photosynthesis and supporting the majority of ocean life, including playful dolphins and coastal crabs.</p>
+              <button class="btn" id="go">Open Ocean Depths Showcase</button>
             </div>
+            <img id="zi" src="" alt="The Sunlit Surface">
+          </article>
         </section>
+      </main>
 
-        <section class="depths-section">
-            <h2>Explore Ocean Depths</h2>
-
-            <div class="tabs">
-                <button class="btn">Surface (0m)</button>
-                <button class="btn">Twilight Zone (-500m)</button>
-                <button class="btn">Abyss (-1000m)</button>
-                <button class="btn active">Mariana Trench (-2000m)</button>
-            </div>
-
-            <article class="content-area">
-                <div class="gradient"></div>
-                <div class="container">
-                    <div class="margin-block">
-                        <h2>The Sunlit Surface</h2>
-                    </div>
-                    <div class="margin-block">
-                        <p class="depth-text">0m Depth Range</p>
-                    </div>
-                </div>
-                <div class="shadow-layer"></div>
-            </article>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <svg class="footer-svg" aria-hidden="true"></svg>
-        <div class="container">
-            <p>Ocean Research Station</p>
-            <p>Educational project for kids</p>
-            <div class="footer-margin">
-                <p>© 2024 Ocean Research Station • Built for The Buoyant Laboratory</p>
-            </div>
+      <footer class="w ft">
+        <div>
+          <b>Ocean Research Station</b>
+          <p>Educational project for kids</p>
+          <p>© 2024 Ocean Research Station • Built for The Buoyant Laboratory</p>
         </div>
-
-        <nav class="nav">
-            <a href="#" class="link">Research Data</a>
-            <a href="#" class="link">Safety Protocol</a>
-            <a href="#" class="link">Privacy</a>
-            <a href="#" class="link">Contact</a>
+        <nav class="lnk">
+          <a href="#">Research Data</a>
+          <a href="#">Safety Protocols</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact</a>
         </nav>
-    </footer>
+      </footer>
+    </section>
 
-    <script src="script.js"></script>
-</body>
+    <section id="show" class="hide">
+      <div class="w top">
+        <h1>Ocean Depths Showcase</h1>
+        <button class="btn" id="back">Back to Home</button>
+      </div>
+      <main class="w lst">
+        <article class="row l"><div><p class="tag">Temp: 24C</p><h2>The Sunlit Surface</h2><p>The epipelagic zone receives ample sunlight, fueling photosynthesis and supporting the majority of ocean life, including playful dolphins and coastal crabs.</p></div><img src="images/sunlit.png" alt="The Sunlit Surface"></article>
+        <article class="row"><div><p class="tag">Temp: 10C</p><h2>The Twilight Zone</h2><p>Sunlight rapidly fades in the mesopelagic zone. Bioluminescence begins to appear as glowing jellyfish and squid navigate the dim, cool waters.</p></div><img src="images/twilight.png" alt="The Twilight Zone"></article>
+        <article class="row d1"><div><p class="tag">Temp: 4C</p><h2>The Abyss</h2><p>Complete darkness and immense pressure characterize the bathypelagic zone. Strange creatures like the Anglerfish use bioluminescent lures to survive.</p></div><img src="images/deep-ocean.png" alt="The Abyss"></article>
+        <article class="row d2"><div><p class="tag">Temp: 2C</p><h2>The Mariana Trench</h2><p>The hadalpelagic zone, the deepest trenches on Earth. Pitch black and near-freezing, home to highly specialized life forms like pale snailfish.</p></div><img src="images/Mariana-trench.png" alt="The Mariana Trench"></article>
+      </main>
+    </section>
+
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
